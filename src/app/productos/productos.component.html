@@ -1,0 +1,16 @@
+
+<div class="container" [style.background-color] = "exist && prod.existencia > 3 ? 'green' : null">
+    <hr>
+    <div class="row">
+        <div class="col">
+            <img src="https://picsum.photos/id/{{prod.uid}}/150/150 " alt="">
+        </div>
+        <div class="col-9">
+            <h5>{{prod.nombre}}</h5>
+            <p>Precion (MXN): ${{prod.precio}}</p>
+            <p>marca: {{prod.marca}}</p>
+            <p>Descripción: {{prod.descripcion}}</p>
+            <p>Existencia: {{prod.existencia}}</p>
+        </div>
+    </div>
+</div>
